@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal - Liz Mariza</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff7fb;
+            color: #443344;
+        }
+
+        /* MENU */
+        header {
+            background-color: #edb4d0;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: #9c386b;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #493344;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #a52d69;
+        }
+
+        /* INICIO */
+        .inicio {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #ffe0ef, #eee0fa);
+        }
+
+        .inicio h1 {
+            font-size: 45px;
+            color: #a83e78;
+            margin-bottom: 20px;
+        }
+
+        .inicio p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #bd6594;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background-color: #85436e;
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 65px 8%;
+        }
+
+        .titulo {
+            text-align: center;
+            color: #a83e78;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .sobre-mi {
+            background-color: white;
+            text-align: center;
+        }
+
+        .sobre-mi p {
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* TARJETAS */
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px #00000015;
+            border-top: 5px solid #e8a3c4;
+        }
+
+        .tarjeta h3 {
+            color: #a83e78;
+            margin: 15px 0;
+        }
+
+        .tarjeta p {
+            line-height: 1.6;
+        }
+
+        .icono {
+            font-size: 40px;
+        }
+
+        /* OBJETIVOS */
+        .objetivos {
+            background-color: #fce8f2;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        /* CONTACTO */
+        .contacto {
+            text-align: center;
+            background-color: white;
+        }
+
+        .contacto p {
+            margin: 12px;
+            font-size: 17px;
+        }
+
+        /* PIE DE PAGINA */
+        footer {
+            background-color: #eab4d0;
+            padding: 22px;
+            text-align: center;
+            color: #633c54;
+        }
+
+        /* CELULARES */
+        @media (max-width: 650px) {
+            nav {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .inicio h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU PRINCIPAL -->
+    <header>
+        <nav>
+            <div class="logo">MI PÁGINA PERSONAL</div>
+
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#carrera">Mi carrera</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+        <div>
+            <h1>¡Hola! Soy Liz Mariza</h1>
+
+            <p>
+                Bienvenidos a mi página web personal.
+                Soy estudiante del Instituto Manuel Scorza Torre.
+            </p>
+
+            <a href="#sobre-mi" class="boton">
+                Conoce más sobre mí
+            </a>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="titulo">Sobre mí</h2>
+
+        <p>
+            Mi nombre es Liz Mariza Yura Auqui.
+            Soy estudiante del Instituto de Educación Superior
+            Tecnológico Público Manuel Scorza Torre.
+            Me considero una persona responsable, dedicada
+            y con muchas ganas de aprender cosas nuevas.
+            Me gusta la tecnología, la informática y conocer
+            nuevas herramientas digitales que me ayuden
+            en mi formación profesional.
+        </p>
+    </section>
+
+    <!-- MI CARRERA -->
+    <section id="carrera">
+        <h2 class="titulo">Mi carrera profesional</h2>
+
+        <div class="contenedor">
+
+            <div class="tarjeta">
+                <div class="icono">💻</div>
+                <h3>Tecnología</h3>
+                <p>
+                    Aprender sobre computadoras,
+                    programas y nuevas tecnologías.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">🌐</div>
+                <h3>Desarrollo Web</h3>
+                <p>
+                    Diseñar y crear páginas web
+                    utilizando HTML, CSS y JavaScript.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">🗄️</div>
+                <h3>Base de Datos</h3>
+                <p>
+                    Organizar, almacenar y administrar
+                    información digital.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" style="background-color:#fce8f2;">
+
+        <h2 class="titulo">Mis habilidades</h2>
+
+        <div class="contenedor">
+
+            <div class="tarjeta">
+                <div class="icono">🤝</div>
+                <h3>Trabajo en equipo</h3>
+                <p>
+                    Me gusta colaborar y compartir
+                    ideas con otras personas.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">📚</div>
+                <h3>Aprendizaje</h3>
+                <p>
+                    Tengo interés por aprender
+                    y mejorar mis conocimientos.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">💡</div>
+                <h3>Creatividad</h3>
+                <p>
+                    Me gusta desarrollar nuevas
+                    ideas y buscar soluciones.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- OBJETIVOS -->
+    <section class="objetivos" id="objetivos">
+
+        <h2 class="titulo">Mis objetivos</h2>
+
+        <p>
+            Mi objetivo es terminar satisfactoriamente
+            mis estudios, adquirir nuevos conocimientos
+            tecnológicos y prepararme para ser una
+            profesional responsable y capacitada.
+            También deseo alcanzar mis metas personales
+            y contribuir positivamente a mi comunidad.
+        </p>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+
+        <h2 class="titulo">Contáctame</h2>
+
+        <p>Gracias por visitar mi página web personal.</p>
+
+        <p><strong>Nombre:</strong> Liz Mariza Yura Auqui</p>
+
+        <p><strong>Instituto:</strong> Manuel Scorza Torre</p>
+
+        <p><strong>Correo:</strong> Escribe aquí tu correo electrónico</p>
+
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p>
+            © 2026 Mi Página Personal - Liz Mariza Yura Auqui
+        </p>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
